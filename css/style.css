@@ -1,0 +1,58 @@
+/*
+*{
+    border: 1px solid white;
+}
+*/
+body{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background: black;
+  padding: 0;
+}
+
+p{
+  padding: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color: #ff9f28;
+}
+
+a:active{
+  color: black;
+}
+
+
+#logo{
+  margin: 0 auto;
+  width: 100%;
+}
+
+#navmenu{
+  display: none;
+  width: 150px;
+  border: 2px solid white;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#blurb{
+  background-image: url("../static/chegoflames.jpg");
+  background-attachment: fixed;
+  background-position: center; 
+}
