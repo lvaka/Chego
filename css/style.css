@@ -25,6 +25,11 @@ a {
   font-size: 30px;
   color: white;
   text-decoration: none;
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition: .2s;
 }
 
 a:visited{
@@ -247,6 +252,11 @@ footer{
   text-align: left;
   font-size: 18px;
   background: rgba(255,255,255, 0.3)
+}
+
+#socialIcons li{
+  display: inline;
+  padding-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
