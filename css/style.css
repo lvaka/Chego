@@ -3,6 +3,7 @@
     border: 1px solid white;
 }
 */
+/*General Template and Index Styling*/
 body{
   width: 100%;
   margin: 0 auto;
@@ -54,7 +55,7 @@ footer{
   padding-left: 15px;
   background: #ff9f28;
 }
-
+/*Grid Box for styling*/
 #boxed{
   display: grid;
   grid-template-columns: 230px auto;
@@ -81,7 +82,8 @@ footer{
 }
 
 #navmenu li{
-  padding: 0 10px;
+  padding: 0 0;
+  padding-left: 20px;
   display: inline;
 }
 
@@ -101,7 +103,6 @@ footer{
   grid-template-areas:
     "arewe"
     "open"
-
 }
 
 #openhours{
@@ -128,6 +129,93 @@ footer{
   background-repeat: no-repeat;
 }
 
+#menu{
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  grid-area: box4;
+  width: 100%;
+  padding: 40px 0;
+  text-align: justify;
+  text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+  background: black;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-items: start;
+  grid-template-areas:
+    "head1 ."
+    "cell1 cell2"
+    "head2 head3"
+    "cell3 cell4"
+    "head4 ."
+    "cell5 cell5"
+
+}
+
+#menu p{
+  font-size: 18px;
+  padding: 0;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+}
+.menuHeadings {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 0 20px;
+  color: #ff9f28;
+}
+
+#appHead{
+  grid-area: head1;
+}
+#appcol1{
+  padding: 0 20px;
+  grid-area: cell1;
+}
+#appcol2{
+  padding: 0 20px;
+  grid-area: cell2;
+}
+
+#grillHead{
+  padding: 0 20px;
+  grid-area: head2;
+}
+#wokHead{
+  padding: 0 20px;
+  grid-area: head3;
+}
+
+#grill{
+  padding: 0 20px;
+  grid-area: cell3;
+}
+
+#wok{
+  padding: 0 20px;
+  grid-area: cell4;
+}
+
+#sweetHead{
+  padding: 0 20px;
+  grid-area: head4;
+}
+
+#sweets{
+  padding: 0 20px;
+  grid-area: cell5;
+}
+
+.note{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+#kungpau{
+  margin-bottom:0;
+}
+
 #contact{
   font-family: 'Fjalla One', sans-serif;
   padding: 15px;
@@ -139,7 +227,7 @@ footer{
   background: rgba(255,255,255, 0.3)
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   #boxed{
     justify-content: center;
     display: grid;
@@ -149,6 +237,21 @@ footer{
       "box2"
       "box3"
       "box4"
+  }
+  #menu{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "head1"
+      "cell1"
+      "cell2"
+      "head2"
+      "cell3"
+      "head3"
+      "cell4"
+      "head4"
+      "cell5"
   }
   #logo{
     justify-self: center;
