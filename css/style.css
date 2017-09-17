@@ -1,8 +1,5 @@
-/*
-*{
-    border: 1px solid white;
-}
-*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 /*General Template and Index Styling*/
 body{
   width: 100%;
@@ -121,12 +118,36 @@ footer{
   padding: 40px 0;
   text-align: justify;
   text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
-  font-family: 'Faustina', serif;
+  font-family: 'Fjalla One', sans-serif;
   line-height: 2em;
   background-image: url("../static/chegoflames.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#catering {
+  grid-area: box4;
+  width: 100%;
+  padding: 20px 0;
+  text-align: justify;
+  color: white;
+  padding: 100px 0;
+  color: white;
+  text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+  font-family: 'Fjalla One', sans-serif;
+  background-image: url("../static/thumbsup.jpg");
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#catering p{
+  font-size: 24px;
+}
+
+#catering a{
+  font-size: 24px;
 }
 
 #menu{
@@ -158,6 +179,7 @@ footer{
   color: white;
   font-family: 'Fjalla One', sans-serif;
 }
+
 .menuHeadings {
   margin-top: 30px;
   font-weight: bold;
