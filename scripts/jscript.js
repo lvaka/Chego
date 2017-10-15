@@ -10,6 +10,11 @@ $(document).ready(function () {
   });
 });
 */
+
+function js_Load(){
+  document.body.style.visibility = 'initial';
+}
+
 function getThanksgivingDay() {
   var todaysDate = new Date();
   var nov1 = new Date(todaysDate.getFullYear(), 10, 1);
@@ -47,9 +52,14 @@ function openHours(){
   }
 }
 
+$('body').hide();
+
 $(document).ready(function () {
   var dateToday = new Date();
   var bannerString = "Today is " + dateToday.toDateString() + " - " + openHours();
   var banner = document.getElementById('openstatus');
   banner.textContent = bannerString;
+  $(window).on('load', function() {
+        $('body').show();
+    });
 });
